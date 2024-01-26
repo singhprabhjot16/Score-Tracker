@@ -45,7 +45,7 @@ function checkScore() {
         addPlayer1.classList.add('disabledButton');
         addPlayer2.classList.add('disabledButton');
 
-        if (parseInt(scorePlayer1.innerText) >  parseInt(scorePlayer2.innerText)) {
+        if (parseInt(scorePlayer1.innerText) > parseInt(scorePlayer2.innerText)) {
             scorePlayer1.style.color = 'rgb(0, 103, 43)';
             scorePlayer2.style.color = 'rgb(112, 0, 0)';
             winner.classList.add('winnerPlayer1');
