@@ -39,7 +39,7 @@ reset.addEventListener('click', function(e) {
 //Defining a function to check for the winner 
 function checkScore() {
     const selectedRounds = parseInt(roundsNum.options[roundsNum.selectedIndex].innerText);
-    if (parseInt(scorePlayer1.innerText) + parseInt(scorePlayer2.innerText) === selectedRounds) {
+    if (parseInt(scorePlayer1.innerText) === selectedRounds || parseInt(scorePlayer2.innerText) === selectedRounds) {
         addPlayer1.disabled = true;
         addPlayer2.disabled = true;
         addPlayer1.classList.add('disabledButton');
