@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #ddd;
+}
+
+#window {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 450px;
+    background-color: white;
+}
+
+#image {
+    width: 100%;
+    border-radius: 7px;
+}
+
+h2 {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#scores {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 10px;
+    font-size: 3em;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+}
+
+#winner {
+    font-size: 0.75em;
+    margin-left: 20px;
+    padding: 5px 10px;
+    width: 60%;
+}
+
+#winner.winnerPlayer1 {
+    background-color: rgb(164, 93, 0);
+    color: white;
+    border-radius: 20px;
+}
+
+#winner.winnerPlayer2 {
+    background-color: rgb(0, 74, 160);
+    color: white;
+    border-radius: 20px;
+}
+
+#instruction, #rounds {
+    padding: 10px 5px;
+}
+
+#rounds {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+#roundsNum {
+    font-size: 0.7em;
+    margin-left: 10px;
+    padding: 0px 10px;
+    border-radius: 15px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#addPlayer1, #addPlayer2, #reset {
+    width: 33%;
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    color: white;
+}
+
+#addPlayer1 {
+    background-color: rgb(164, 93, 0);
+    margin-right: 5px;
+}
+#addPlayer1:hover {
+    background-color: rgba(164, 93, 0, 0.85);
+    cursor: pointer;
+}
+
+#addPlayer2 {
+    background-color: rgb(0, 74, 160);
+    margin-right: 5px;
+}
+#addPlayer2:hover {
+    background-color: rgba(0, 74, 160, 0.85);
+    cursor: pointer;
+}
+
+#reset {
+    background-color: rgb(112, 0, 0);
+}
+#reset:hover {
+    background-color: rgba(112, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+#addPlayer1.disabledButton, #addPlayer2.disabledButton {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+

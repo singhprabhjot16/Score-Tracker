@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="window">
+        <div>
+            <img id="image" src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <h2>Table Tennis Score Keeper</h2>
+        <div id="scores">
+            <span id="scorePlayer1">0</span> - <span id="scorePlayer2">0</span>
+            <span id="winner"></span>
+        </div>
+        <div id="instruction">Use the below buttons to keep track of the scores</div>
+        <div id="rounds">
+            <span>Playing to</span>
+            <select name="roundsNum" id="roundsNum">
+                <option value="">3</option>
+                <option value="">5</option>
+                <option value="">7</option>
+                <option value="">9</option>
+                <option value="">11</option>
+                <option value="">13</option>
+            </select>
+        </div>
+        <div id="buttons">
+            <button id="addPlayer1">+1 Player 1</button>
+            <button id="addPlayer2">+1 Player 2</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
