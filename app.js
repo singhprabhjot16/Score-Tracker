@@ -24,6 +24,14 @@ addPlayer2.addEventListener('click', function(e) {
 });
 
 reset.addEventListener('click', function(e) {
+    resetToDefault();
+});
+
+roundsNum.addEventListener('change', function(e) {
+    resetToDefault();
+});
+
+function resetToDefault() {
     addPlayer1.disabled = false;
     addPlayer2.disabled = false;
     addPlayer1.classList.remove('disabledButton');
@@ -34,7 +42,7 @@ reset.addEventListener('click', function(e) {
     scorePlayer2.innerText = '0';
     winner.classList.remove(...winner.classList);
     winner.innerText = '';
-});
+}
 
 //Defining a function to check for the winner 
 function checkScore() {
